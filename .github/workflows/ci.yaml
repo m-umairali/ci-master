@@ -30,7 +30,8 @@ jobs:
         python -m unittest discover
 
     - name: Create CML report
-      env:
+      env: 
+        permissions: write-al
         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
 
